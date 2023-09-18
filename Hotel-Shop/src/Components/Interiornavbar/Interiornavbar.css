@@ -1,0 +1,7 @@
+.Interiornavbar{
+    display: flex;
+    justify-content: space-between;
+    width: 89%;
+    padding-top: 2px; 
+    padding-right: 10px;
+}
