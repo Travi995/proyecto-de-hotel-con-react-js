@@ -1,8 +1,10 @@
-.Menunavbar{
+.Menunavbarini{
     
     display: flex;
-    width: 46%;
-    padding: 15px;
+    width: 100%;
+    padding-top:11px ;
+    padding-left:15px ;
+    padding-bottom:15px ;
     padding-right: 21px;
     
     

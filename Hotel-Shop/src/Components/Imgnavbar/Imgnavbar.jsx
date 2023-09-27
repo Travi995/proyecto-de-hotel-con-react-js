@@ -3,9 +3,8 @@ import React from "react";
 import './Imgnavbar.css'
 
 const Imgnavbar = ({ srcimg }) => {
-    return <div>
-    <img src={srcimg} className="Imgnavbar" />
-    </div>
+    return <img src={srcimg} className="Imgnavbar" />
+    
 }
 
 export default Imgnavbar

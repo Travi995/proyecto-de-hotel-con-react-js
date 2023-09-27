@@ -1,7 +1,23 @@
 .Interiornavbar{
     display: flex;
     justify-content: space-between;
-    width: 89%;
+    width: 100%;
     padding-top: 2px; 
     padding-right: 10px;
+}
+.Agrupnav{
+    display: flex;
+    width: 49%;
+}
+
+.Iconoption{
+    margin-left: 25px;
+    margin-right: 50px;
+    width: 50px !important;
+    color: white;
+}
+
+.Iconoption div{
+    margin-top: 8px ;
+    margin-left: 0px !important;
 }

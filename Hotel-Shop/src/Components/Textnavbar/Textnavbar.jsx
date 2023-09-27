@@ -1,13 +1,15 @@
 import React from "react";
 
-import './textnavbar.css'
+import './Textnavbar.css'
 
 
-const Textnavbar = ({text}) => {
+const Textnavbar = ({ text, claseComp,clase }) => {
     
-    return <span className="Textnavbar">
+    return<div className={claseComp}>
+    <span className={`Textnavbar ${clase}`}>
         {text}
     </span>
+    </div>
 }
 
 export default Textnavbar 

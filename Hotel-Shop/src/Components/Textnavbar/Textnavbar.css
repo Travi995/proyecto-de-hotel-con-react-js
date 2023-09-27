@@ -1,0 +1,42 @@
+.Textnavbar{
+    font-weight: 100 !important;
+    color: #c5c5c5; 
+    margin-top: 1px;
+    margin-left: 4px;
+    margin-right: 2px;
+    font-size: 15px;
+    font-family:var(--arial-font);
+    transition: all 500ms;
+}
+
+
+.Numbercell{
+    display: block;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family:var(--arial-font);
+    
+    
+}
+
+.TextComp{
+    grid-column-start: 2;
+    grid-column-end: 5 ;
+
+    grid-row-start: 2.5;
+    grid-row-end: 4;
+    
+}
+
+
+.Titulo{
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-family: var(--arial-font);
+}
+
+.Titulo:hover{
+    cursor: text;
+}
