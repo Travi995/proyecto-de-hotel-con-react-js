@@ -1,11 +1,11 @@
 import React from "react";
 import './Input.css'
 
-const Input = ({ClaseComp,ClassInput,TextLabel}) => {
+const Input = ({ClaseComp,ClassInput,TextInt, evento}) => {
     
     return <div className={ClaseComp}>
-        <input type="text" className={`InputComp ${ClassInput}`} />
-        <label for="InputComp" className="LabelInput">{ TextLabel}</label>
+        <input type="text" className={`InputComp ${ClassInput}`} placeholder={TextInt} onClick={(event)=>evento(event)}/>
+        
         </div>
         
 }

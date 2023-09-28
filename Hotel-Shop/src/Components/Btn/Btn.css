@@ -1,0 +1,33 @@
+.Button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+}
+
+.Button:hover{
+    cursor: pointer;
+}
+
+.BtnEmergente{
+    grid-column-start: 2 ;
+    grid-column-end: 8;
+
+    grid-row-start: 13;
+    grid-row-end: 15 ;
+
+    
+    padding-left: 15px;
+    background-color: #c19b76;
+    color: white;
+    font-weight: 100;
+}
+
+.BtnEmergente:hover{
+    background-color: #535252;
+    color: #c19b76 ;
+}

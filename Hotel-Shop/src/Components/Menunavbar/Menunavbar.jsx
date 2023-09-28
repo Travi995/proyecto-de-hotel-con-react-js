@@ -7,50 +7,44 @@ import Btnnavbar from "../Btnnavbar/Btnnavbar";
 import Ventanaemergente from "../Ventanaemergente/Ventanaemergente";
 import "./Menunavbar.css";
 
-const Menunavbar = ({ classmenu }) => {
+const Menunavbar = ({ classmenu,  mostrarse,eventoSearch }) => {
   const [showVentana, setShowVentana] = useState(false);
-  const [showSearch, setShowSearch] = useState(false)
+  
 
-    const cambiarEstadoVentana = () => {
-        const value = showVentana 
-        setShowVentana(!value)
+  const cambiarEstadoVentana = (event) => {
+    let elemento = event.target
+    const value = showVentana 
+
+    if (elemento.classList.contains('active')) {
+       
+      elemento.classList.remove('active')
+      } else {
+        
+        elemento.classList.add('active')
+        }
+
+    
+    setShowVentana(!value)
+   
     }
 
-    const cierreForzado = (event) => {
-        // Obtenemos el elemento relacionado al evento (elemento que está debajo del cursor)
-        const relatedTarget = event.relatedTarget;
     
-        // Comprobamos si el elemento relacionado es nulo (cursor saliendo del componente padre)
-        if (!event.currentTarget.contains(relatedTarget)) {
-          // El cursor está saliendo del componente padre
-         
-        }
-      };
-    
-  //estado de la barra de busqueda
-  const cambiarEstadoSearch = () => {
-    const value = showSearch
-    setShowSearch(!value)
-    
-  }
-  
-  
   return (
-    <ul className={classmenu}>
+    <ul className={`${classmenu} ${!mostrarse?'ShowMenu': ''}`}>
       <div>
               <Btnnavbar Srcimg={Iconimg} text="BOOK NOW"
-                  evento={cambiarEstadoVentana}
-                  clasebtn="Borderright" outEvent={(arg)=>cierreForzado(arg)} />
-              <Ventanaemergente close={()=>cambiarEstadoVentana()} isOpen={showVentana} />
+                  evento={(event)=>cambiarEstadoVentana(event)}
+                  clasebtn="Borderright" />
+              <Ventanaemergente  isOpen={showVentana} />
       </div>
       <Btnnavbar
         Srcimg={Cell}
         text="+1-800-1234-567"
         claseicon={"Iconcell"}
         clasetext="Numbercell"
-        evento={()=>cambiarEstadoSearch()}
+        evento={()=>alert('+1-800-1234-567')}
       />
-      <Btnnavbar Srcimg={Iconsearch} claseicon="Iconsearch" />
+      <Btnnavbar Srcimg={Iconsearch} claseicon="Iconsearch" evento = {()=>eventoSearch()} />
     </ul>
   );
 };

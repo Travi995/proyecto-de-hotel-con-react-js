@@ -4,11 +4,11 @@ import Imgnavbar from "../Imgnavbar/Imgnavbar.jsx";
 
 import "./Btnnavbar.css";
 
-const Btnnavbar = ({Srcimg,text,evento,clasebtn,claseicon,clasetext, outEvent}) => {
+const Btnnavbar = ({Srcimg,text,evento,clasebtn,claseicon,clasetext}) => {
   return (
-    <li
-      className={`Btnnavbar ${clasebtn} `}
-      onClick={() => evento()} onMouseOut={(arg)=>outEvent(arg)}
+    <section
+      className={`Btnnavbar ${clasebtn}  `}
+      onClick={(event) => evento(event)} 
     >
       <div className={claseicon}>
         {typeof Srcimg === "string" ? (
@@ -19,7 +19,7 @@ const Btnnavbar = ({Srcimg,text,evento,clasebtn,claseicon,clasetext, outEvent}) 
       </div>
 
       <Textnavbar text={text} clase={clasetext}    />
-    </li>
+    </section>
   );
 };
 
