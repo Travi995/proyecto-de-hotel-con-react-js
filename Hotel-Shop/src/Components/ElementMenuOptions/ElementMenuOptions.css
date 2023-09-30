@@ -1,0 +1,113 @@
+.ElementMenu{
+    display: flex;
+    margin: 12px;
+    transition: all 500ms;
+}
+
+.TextElementMenu{
+    color: white;
+    font-size: 15px;
+    font-family: var(--arial-font);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.IconFlecha{
+    color: white;
+    margin-left: 5px;
+}
+
+.ElementMenu:hover{
+    cursor: pointer;
+}
+
+.ElementMenu:hover .IconFlecha > svg {
+    animation: cambioDeFlecha 100ms linear forwards;
+}
+
+@keyframes cambioDeFlecha{
+    0%{
+        transform: rotate(0deg) 
+    }
+    100%{
+        transform: rotate(180deg)  
+    }
+}
+
+
+.VentanaItemsNav{
+    display:none;
+
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr) ;
+    background-color: #303030;
+    box-shadow: 1px 1px 1px rgb(44, 44, 44);
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: var(--arial-font);
+    color: rgb(177, 175, 175);
+}
+
+
+.ShowElements{
+    display: grid;
+}
+
+.RoomsElements{
+    width: 250px;
+    height: 60px;
+    
+}
+
+.RoomsText{
+    grid-column-start:2 ;
+    grid-column-end:8 ; 
+    grid-row-start:5 ;
+    grid-row-end:10 ; 
+    transition: all 500ms;
+}
+
+.RoomsText:hover{
+    cursor: pointer;
+    color: blanchedalmond;
+
+}
+
+.BlogElements{
+    width: 230px;
+    height: 140px;
+}
+
+.BlogText{
+    transition: all 500ms;
+}
+
+.BlogText:hover{
+
+    cursor: pointer;
+    color: rgb(245, 242, 239);
+}
+
+.BlogText0{
+    grid-column-start:2 ;
+    grid-column-end:8 ; 
+    grid-row-start:3 ;
+    grid-row-end:5 ; 
+}
+.BlogText1{
+    grid-column-start:2 ;
+    grid-column-end:8 ; 
+    grid-row-start:6;
+    grid-row-end:8 ; 
+}
+.BlogText2{
+    grid-column-start:2 ;
+    grid-column-end:11; 
+    grid-row-start:9 ;
+    grid-row-end:12 ; 
+}
+
+
+

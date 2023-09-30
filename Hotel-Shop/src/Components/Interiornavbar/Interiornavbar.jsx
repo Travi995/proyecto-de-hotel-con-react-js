@@ -50,7 +50,7 @@ const Interiornavbar = () => {
         </div>
 
         <Icononavbar srcImagen={logoInverse} mostrarse={viewNav} />
-        <div className={`AgrupNav${!viewNav ? 'TamannoAuto' : ''}`}>
+        <div className={`AgrupNav ${!viewNav ? 'TamannoAuto' : ''} `}>
             <Menunavbar classmenu='Menunavbarini' mostrarse={viewMenu} eventoSearch={() => cambiarVistaNav()} />
 
             {/* menu desplegable */}
