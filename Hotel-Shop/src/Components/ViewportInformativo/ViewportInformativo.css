@@ -1,0 +1,68 @@
+
+.ViewportInformativo{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+   background-color:#f5f6fa ;
+}
+
+.ContenedorVisual{
+    width: 40%;
+    height: 55%;
+}
+
+.ContenedorVisual >img{
+    width: 100%;
+    height: 100%;
+}
+
+.ContenedorInformativo{
+    width: 40%;
+    height: 55%;
+
+    display:block;
+    
+    margin-left: 5%;
+}
+
+.TitleInfo{
+    
+    font-size: 40px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.Description{
+    width:76% ;
+    font-weight: 100;
+    color: gray;
+    padding-left: 50px;
+    font-size: 17px;
+    
+}
+
+.FirmaDigital{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.PersonBoss{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.NameBoss{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.CargoBoss{
+    color: #aeb1be;
+}

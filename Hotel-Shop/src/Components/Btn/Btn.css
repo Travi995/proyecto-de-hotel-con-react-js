@@ -5,8 +5,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-
+    margin-left: 8%;
+    margin-bottom: 10px;
+    background-color: #c19b76;
+    color: white;
+    font-weight: 100;
     text-transform: uppercase;
+    transition: all 500ms;
 }
 
 .Button:hover{
@@ -14,20 +19,13 @@
 }
 
 .BtnEmergente{
-    grid-column-start: 2 ;
-    grid-column-end: 8;
-
-    grid-row-start: 13;
-    grid-row-end: 15 ;
-
+    width: 79%;
+    height: 58% ;
     
-    padding-left: 15px;
-    background-color: #c19b76;
-    color: white;
-    font-weight: 100;
 }
 
-.BtnEmergente:hover{
+.Button:hover{
     background-color: #535252;
     color: #c19b76 ;
 }
+

@@ -14,8 +14,7 @@ const ElementMenuOptions = ({ Text, Icon, classVentanaEmergente, items,TextClass
     return <section
         className="ElementMenu"
         onMouseEnter={() => cambiarEmergente(true)}
-         onMouseLeave={() => cambiarEmergente(false)}
-    >
+        onMouseLeave={() => cambiarEmergente(false)}>
 
         <span className="TextElementMenu">{Text}</span>
 
@@ -24,12 +23,10 @@ const ElementMenuOptions = ({ Text, Icon, classVentanaEmergente, items,TextClass
         {items != undefined ? (
             <div className={`VentanaItemsNav ${classVentanaEmergente} 
                 ${viewEmergente == true ? 'ShowElements' : ''}`}
-                onMouseEnter={() => cambiarEmergente(true)}
-            // onMouseLeave={() => cambiarEmergente(false)}
-            >
+                onMouseEnter={() => cambiarEmergente(true)}>
 
                 {items.map((element, index) => {
-                    return <span key={index} className={`TextClass ${TextClass+index}`}>{element}</span>;
+                    return <div key={index} className={TextClass}>{element}</div>;
                 })}
 
             </div>

@@ -38,13 +38,12 @@
 .VentanaItemsNav{
     display:none;
 
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(13, 1fr) ;
     background-color: #303030;
-    box-shadow: 1px 1px 1px rgb(44, 44, 44);
+    box-shadow: 2px 2px 2px rgb(39, 39, 39);
     position: absolute;
     border-radius: 5px;
     margin-top: 20px;
+    padding-left: 10px;
     font-size: 18px;
     font-family: var(--arial-font);
     color: rgb(177, 175, 175);
@@ -56,16 +55,15 @@
 }
 
 .RoomsElements{
-    width: 250px;
-    height: 60px;
+    width: 200px;
+    padding: 20px;
+    grid-template-columns: 2;
+    grid-template-rows: min-content;
     
 }
 
 .RoomsText{
-    grid-column-start:2 ;
-    grid-column-end:8 ; 
-    grid-row-start:5 ;
-    grid-row-end:10 ; 
+    
     transition: all 500ms;
 }
 
@@ -76,11 +74,15 @@
 }
 
 .BlogElements{
-    width: 230px;
-    height: 140px;
+    width: 200px;
+    padding: 20px;
+    right: 200px;
+    grid-template-columns: 2;
+    grid-template-rows: min-content;
 }
 
 .BlogText{
+    margin: 10px;
     transition: all 500ms;
 }
 
@@ -90,24 +92,21 @@
     color: rgb(245, 242, 239);
 }
 
-.BlogText0{
-    grid-column-start:2 ;
-    grid-column-end:8 ; 
-    grid-row-start:3 ;
-    grid-row-end:5 ; 
-}
-.BlogText1{
-    grid-column-start:2 ;
-    grid-column-end:8 ; 
-    grid-row-start:6;
-    grid-row-end:8 ; 
-}
-.BlogText2{
-    grid-column-start:2 ;
-    grid-column-end:11; 
-    grid-row-start:9 ;
-    grid-row-end:12 ; 
+.PagesElements{
+    width: 900px;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: min-content;
+    right: 80px;
 }
 
+.PagesText{
+    font-size: 16px !important;
+    margin: 12px;
+    transition: all 500ms;
+}
 
+.PagesText:hover{
 
+    cursor: pointer;
+    color: rgb(245, 242, 239);
+}

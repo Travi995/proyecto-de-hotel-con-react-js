@@ -4,6 +4,6 @@
     background-color: rgba(8, 8, 8, 0.831);
     display: flex;
     justify-content: center;
-    
+    position: fixed;
     
 }

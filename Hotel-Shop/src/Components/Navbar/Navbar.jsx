@@ -8,7 +8,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     
-    return <nav className='Navbar'>
+    return <nav className='Navbar out'>
         <Interiornavbar/>
     </nav>
 }
