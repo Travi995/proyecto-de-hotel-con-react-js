@@ -1,0 +1,51 @@
+.ImgGallery{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.ImagenGall{
+    transition: all 500ms;
+}
+.ImgGallery:hover .ImagenGall{
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
+.TextImageGallery{
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    z-index: 3;
+    bottom: 40px;
+    left: 35px;
+    transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    
+    
+}
+
+.TitleImageGallery{
+    color: white;
+    
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.DescriptionImageGallery{
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 17px ;
+    
+}
+
+
+.ImgGallery:hover .TextImageGallery{
+    display: flex;
+} 
+
+/* TitleImageGallery{
+    display: block;
+} */
+

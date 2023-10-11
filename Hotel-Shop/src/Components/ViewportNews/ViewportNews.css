@@ -1,0 +1,16 @@
+
+.ViewportNews{
+    padding: 5%;
+}
+
+.TitleNews{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.ElementNews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+}

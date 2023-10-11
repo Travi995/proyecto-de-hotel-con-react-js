@@ -29,3 +29,17 @@
     color: #c19b76 ;
 }
 
+.BtnRooms{
+    width: 300px;
+    font-weight: 100 !important;
+    margin-left: 0px !important;
+}
+
+.BtnRelacional{
+    width: 15%;
+    height: 50px;
+    margin-left: 0% !important;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 100 !important
+}

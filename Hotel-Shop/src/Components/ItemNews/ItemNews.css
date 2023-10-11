@@ -1,0 +1,37 @@
+
+
+.ItemNews{
+    padding-left: 20px;
+}
+
+.TitleNewElement{
+    font-size: 33px;
+    color: #c19b76; 
+    margin-top: 25px;
+    transition: all 1s ;
+}
+
+.TitleNewElement:hover{
+    cursor: pointer;
+    color: rgb(9, 9, 9);
+    font-weight: 200;
+}
+
+.ItemNewsInfo{
+    display: flex;
+    margin-top: 20px;
+    color: rgb(71, 70, 70);
+}
+.ItemNewsInfo>span{
+    font-weight: 100;
+   padding-right: 15px;
+   padding-left: 15px;
+    border-right: 1px solid rgba(146, 142, 142, 0.777);
+}
+
+.ItemNewsDescription > p{
+
+        padding-right: 14%;
+        font-size: 18px;
+        color: gray;
+}

@@ -1,0 +1,22 @@
+
+.FooterContact{
+    color: white;
+    margin-left: 50px;
+    flex-grow: 1;
+}
+
+.ContactElements{
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactElements>div{
+    margin-top: 20px;
+    font-size: 18x;
+    color: rgb(173, 169, 169);
+    
+}
+
+.InfoFooterContact{
+    margin-left: 20px;
+}

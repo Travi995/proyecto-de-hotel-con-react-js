@@ -1,0 +1,23 @@
+
+export let linksFooter = [
+    'Our Rooms',
+    'New',
+    'Contacts',
+    'Facebook',
+    'Single Room',
+    'About Us',
+    'Gallery',
+    'Twitter',
+    'Double Room',
+    'Login page',
+    'testimonials',
+    'Instagram',
+    'Family Room',
+    'Registration Page',
+    'Our History',
+    'Linkedin',
+    'Luxury Room',
+    'Careers',
+    'Booking',
+    'Pinterest',
+]

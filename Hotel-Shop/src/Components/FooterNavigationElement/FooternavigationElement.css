@@ -1,0 +1,25 @@
+
+.FooterNavigationElement{
+    flex-grow: 1;
+}
+
+.TitleFooter{
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 15px;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.LinksFooter{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.LinksFooter >span{
+    
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(165, 163, 163);
+}

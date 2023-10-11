@@ -1,0 +1,41 @@
+.ViewportRelacional{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/src/assets/call-to-action-1-1920x456.jpg) no-repeat center/cover;
+    background-size: 100% 100%
+}
+
+.TitleViewportRelacional{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.TitleRelacional{
+    font-size: 40px;
+    color: white;
+}
+.SecondTitle{
+    font-weight: 100  !important;
+    font-style: italic;
+    margin-left: 25px;
+}
+
+.DescriptionRelacional{
+    width: 500px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+.DescriptionRelacional p{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
