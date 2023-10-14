@@ -9,7 +9,7 @@ import './Navbar.css'
 const Navbar = () => {
     
     return <nav className='Navbar out'>
-        <Interiornavbar/>
+        <Interiornavbar />
     </nav>
 }
 

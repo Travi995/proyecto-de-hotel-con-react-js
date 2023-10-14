@@ -9,7 +9,6 @@ const FooternavigationElement = ({ Title, elements }) => {
 
         <div className="LinksFooter">
             {elements.map((element, index) => {
-                { console.log(element) }
                 return  <span key={index}>{ element}</span>
             })}
         </div>

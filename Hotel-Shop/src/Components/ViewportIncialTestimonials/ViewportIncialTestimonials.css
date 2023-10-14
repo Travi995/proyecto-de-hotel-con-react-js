@@ -1,0 +1,78 @@
+
+.ViewportIncialTestimonials{
+    width: 100vw;
+    height: 69vh;
+    display: grid;
+    grid-template-areas: 
+     '. . . '
+     '. . . '
+     'detalle detalle detalle'
+     'titulo titulo titulo'
+     'indice indice indice';
+    
+    position:relative;
+    background: url(/src/assets/fondoTestimonials.jpg) no-repeat center/cover;
+    background-size: 100% 100%; 
+    
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.PresentacionTestimonials{
+    grid-area:detalle ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.Guion{
+    
+    display: block;
+    width: 50px;
+    height: 0.1px;
+    border: 1px solid white;
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+.IndicePages{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.TitleInicial{
+    grid-area:titulo ;
+}
+.TitleInicial >span{
+    display:block;
+    font-size: 60px;
+    color: white;
+    font-family: arial;
+    padding-top: 10px;
+    
+}
+
+.IndiceTestimonials{
+    grid-area: indice;
+    position: relative;
+    
+    
+    
+}
+
+.IndiceTestimonials>span{
+    margin-right: 30px ;
+    color: rgba(163, 161, 161, 0.794);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 500ms;
+}
+
+.IndiceTestimonials>span:hover{
+    cursor: pointer;
+    color: white;
+}

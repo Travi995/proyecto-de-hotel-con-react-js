@@ -54,7 +54,7 @@ const Interiornavbar = () => {
             <Menunavbar classmenu='Menunavbarini' mostrarse={viewMenu} eventoSearch={() => cambiarVistaNav()} />
 
             {/* menu desplegable */}
-            <MenuOptions mostrarMenu={ viewMenuOptions} />
+            <MenuOptions  mostrarMenu={ viewMenuOptions} />
 
             <div className="Iconoption" onClick={()=>{showMenuOptions()}}>
                 <Hamburger />
